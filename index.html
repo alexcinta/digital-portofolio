@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio personal — Network, Cloud & IoT Engineer" />
+  <title>Portfolio</title>
+
+  <!-- Favicon (opțional, înlocuiește cu propriul tău) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2322d3ee'/%3E%3Ctext x='50' y='62' font-family='Inter,sans-serif' font-size='44' font-weight='700' text-anchor='middle' fill='%230a0e1a'%3E%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Space Grotesk (titluri) + Inter (text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       NAVBAR — sticky, link-uri spre secțiuni + dark mode + buton CV
+       ======================================================================== -->
+  <header class="navbar" id="navbar" data-testid="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo" data-testid="nav-logo">
+        <span class="logo-mark" id="logo-mark">NT</span>
+        <span class="logo-text" id="logo-text">Numele Tău</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about"    data-testid="nav-link-about">Despre</a>
+        <a href="#skills"   data-testid="nav-link-skills">Skills</a>
+        <a href="#projects" data-testid="nav-link-projects">Proiecte</a>
+        <a href="#homelab"  data-testid="nav-link-homelab">Home Lab</a>
+        <a href="#contact"  data-testid="nav-link-contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" id="cv-button" class="btn btn-ghost btn-sm" data-testid="download-cv-btn" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>CV</span>
+        </a>
+
+        <button id="theme-toggle" class="btn btn-icon" aria-label="Toggle theme" data-testid="theme-toggle-btn">
+          <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+
+        <button id="mobile-toggle" class="btn btn-icon mobile-only" aria-label="Toggle menu" data-testid="mobile-menu-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" data-testid="mobile-menu">
+      <a href="#about"    data-testid="mobile-link-about">Despre</a>
+      <a href="#skills"   data-testid="mobile-link-skills">Skills</a>
+      <a href="#projects" data-testid="mobile-link-projects">Proiecte</a>
+      <a href="#homelab"  data-testid="mobile-link-homelab">Home Lab</a>
+      <a href="#contact"  data-testid="mobile-link-contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="section hero" data-testid="hero-section">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <span class="badge" id="hero-badge" data-testid="hero-badge">
+            <span class="dot"></span>
+            <span id="hero-availability">Open to work</span>
+          </span>
+          <h1 class="hero-title">
+            Salut, eu sunt <span class="accent" id="hero-name">Numele Tău</span>.
+          </h1>
+          <p class="hero-role" id="hero-role">Network & Cloud Engineer</p>
+          <p class="hero-tagline" id="hero-tagline">Construiesc infrastructuri scalabile, sigure și automatizate.</p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" data-testid="hero-cta-projects">
+              Vezi proiectele
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline" data-testid="hero-cta-contact">Contactează-mă</a>
+          </div>
+
+          <div class="hero-stats" id="hero-stats" data-testid="hero-stats"></div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+              <span class="hero-card-title">~/whoami</span>
+            </div>
+            <pre class="hero-card-body" id="hero-terminal"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" data-testid="about-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-num">01</span>
+          <h2 class="section-title" id="about-heading">Despre mine</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal" id="about-text"></div>
+
+          <div class="about-side reveal">
+            <h3 class="side-title">Educație</h3>
+            <ul class="timeline" id="education-list"></ul>
+
+            <h3 class="side-title">Experiență</h3>
+            <ul class="timeline" id="experience-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" data-testid="skills-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Skills tehnice</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" data-testid="projects-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Proiecte</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-list" id="projects-list"></div>
+      </div>
+    </section>
+
+    <!-- HOME LAB -->
+    <section id="homelab" class="section" data-testid="homelab-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-num">04</span>
+          <h2 class="section-title">Home Lab</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <p class="section-intro reveal" id="homelab-intro"></p>
+
+        <div class="homelab-grid">
+          <div class="homelab-block reveal">
+            <h3 class="block-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              Hardware
+            </h3>
+            <ul class="hardware-list" id="hardware-list"></ul>
+          </div>
+
+          <div class="homelab-block reveal">
+            <h3 class="block-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              Servicii self-hosted
+            </h3>
+            <div class="services-grid" id="services-grid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact" data-testid="contact-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-num">05</span>
+          <h2 class="section-title" id="contact-heading">Hai să discutăm</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-intro" id="contact-intro"></p>
+            <ul class="contact-links" id="contact-links"></ul>
+          </div>
+
+          <form id="contact-form" class="contact-form reveal" data-testid="contact-form" novalidate>
+            <div class="form-row">
+              <label for="form-name">Nume</label>
+              <input type="text" id="form-name" name="name" required data-testid="contact-name-input" />
+            </div>
+            <div class="form-row">
+              <label for="form-email">Email</label>
+              <input type="email" id="form-email" name="email" required data-testid="contact-email-input" />
+            </div>
+            <div class="form-row">
+              <label for="form-message">Mesaj</label>
+              <textarea id="form-message" name="message" rows="5" required data-testid="contact-message-input"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-testid="contact-submit-btn">
+              Trimite mesaj
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form-hint">Se va deschide clientul tău de email.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" data-testid="footer">
+    <div class="container footer-inner">
+      <span id="footer-copy">© <span id="footer-year"></span> · Built with HTML · CSS · JS</span>
+      <a href="#hero" class="footer-back" data-testid="back-to-top">↑ Sus</a>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
