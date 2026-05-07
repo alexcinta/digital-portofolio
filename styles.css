@@ -1,9 +1,3 @@
-/* ============================================================================
-   🎨 PORTFOLIO STYLES
-   Toate culorile sunt variabile CSS în :root și [data-theme="light"].
-   Pentru a schimba paleta, modifică doar variabilele de mai jos.
-   ============================================================================ */
-
 :root {
   --bg:           #0a0e1a;
   --bg-elev:      #0f1524;
