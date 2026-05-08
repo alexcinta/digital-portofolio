@@ -75,24 +75,24 @@ const PORTFOLIO_DATA = {
   // ── SKILLS (icon: network | cloud | cpu | code) ──────────────────────
   skills: [
     {
-      group: "Networking",
+      group: "Power Bi",
       icon: "network",
       items: [
-        { name: "Cisco IOS / NX-OS", level: 90 },
-        { name: "BGP / OSPF",        level: 85 },
-        { name: "VLAN / VXLAN",      level: 88 },
-        { name: "Firewall (pfSense, FortiGate)", level: 80 }
+        { name: "Operational Dashboards", level: 90 },
+        { name: "KPI Dashboards",        level: 85 },
+        // { name: "VLAN / VXLAN",      level: 88 },
+        // { name: "Firewall (pfSense, FortiGate)", level: 80 }
       ]
     },
     {
-      group: "Cloud & DevOps",
+      group: "Leadership & Management",
       icon: "cloud",
       items: [
-        { name: "AWS",        level: 85 },
-        { name: "Azure",      level: 75 },
-        { name: "Kubernetes", level: 80 },
-        { name: "Terraform",  level: 88 },
-        { name: "Docker",     level: 92 }
+        { name: "Team Leadership", level: 95 },
+        { name: "People Management", level: 90 },
+        { name: "Stakeholder Management", level: 85 },
+        { name: "Project Management", level: 85 },
+        { name: "Process Improvement",     level: 85 }
       ]
     },
     {
