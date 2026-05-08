@@ -170,12 +170,12 @@ const PORTFOLIO_DATA = {
     services: [
       { name: "Home Assistant",       category: "Smart Home",   description: "Automatizare casă (lumini, senzori, cameră)" },
       { name: "Pi-hole",              category: "Network",      description: "DNS sinkhole — blocare reclame la nivel de rețea" },
-      { name: "Nextcloud",            category: "Productivity", description: "Cloud personal pentru fișiere, calendar, contacte" },
+      // { name: "Nextcloud",            category: "Productivity", description: "Cloud personal pentru fișiere, calendar, contacte" },
       { name: "Jellyfin",             category: "Media",        description: "Server media pentru filme și muzică" },
       { name: "Gitea",                category: "DevOps",       description: "Git self-hosted pentru proiectele personale" },
       { name: "Grafana + Prometheus", category: "Monitoring",   description: "Dashboards și metrici pentru toată infrastructura" },
-      { name: "Vaultwarden",          category: "Security",     description: "Manager de parole self-hosted (Bitwarden compatible)" },
-      { name: "Traefik",              category: "Network",      description: "Reverse proxy cu HTTPS automat (Let's Encrypt)" }
+      // { name: "Vaultwarden",          category: "Security",     description: "Manager de parole self-hosted (Bitwarden compatible)" },
+      // { name: "Traefik",              category: "Network",      description: "Reverse proxy cu HTTPS automat (Let's Encrypt)" }
     ]
   },
 
@@ -183,9 +183,9 @@ const PORTFOLIO_DATA = {
   contact: {
     heading: "Hai să discutăm",
     intro: "Sunt deschis pentru colaborări, oportunități și proiecte interesante.",
-    email:    "email@example.com",                       // TODO
+    email:    "alexandru.cinta@yahoo.com",                       // TODO
     linkedin: "https://linkedin.com/in/username",        // TODO
-    github:   "https://github.com/username",             // TODO
+    github:   "https://github.com/alexcinta",             // TODO
     twitter:  "",                                        // lasă "" gol pentru a ascunde
     website:  ""
   },
