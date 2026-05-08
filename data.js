@@ -136,7 +136,7 @@ const PORTFOLIO_DATA = {
         "Plată online a taxelor școlare",
         "Aplicație mobilă iOS + Android"
       ],
-      technologies: ["React", "React Native", "Node.js", "PostgreSQL", "Docker", "AWS"],
+      technologies: ["React", "React Native", "Node.js", "PostgreSQL"],
       links: { live: "", github: "", case_study: "" },
       status: "În producție"
     },
@@ -160,11 +160,11 @@ const PORTFOLIO_DATA = {
     intro: "Laboratorul meu de acasă — locul unde testez, învăț și self-host.",
 
     hardware: [
-      { name: "Server Dell R720",     spec: "2× Xeon E5-2670, 128GB RAM, 8TB RAID-Z2", role: "Hypervisor Proxmox" },
-      { name: "Raspberry Pi 4 (×3)",  spec: "8GB RAM, SSD NVMe USB",                   role: "K3s cluster" },
-      { name: "Synology DS920+",      spec: "4× 8TB WD Red, BTRFS",                    role: "NAS & backups" },
-      { name: "UniFi Dream Machine",  spec: "Router + controller WiFi",                role: "Networking & VLAN" },
-      { name: "Switch UniFi 24-port", spec: "Managed L2+, PoE",                        role: "Distribution" }
+      { name: "Lenovo Tiny M920Q",     spec: "Intel Core i5, 32GB RAM, SSD NVMe", role: "Proxmox Hypervisor (VMs)" },
+      { name: "Lenovo ThinkCentre M710q",  spec: "Intel Core i5, 16GB RAM, SSD", role: "Router (OPNsense)" },
+      // { name: "Synology DS920+",      spec: "4× 8TB WD Red, BTRFS", role: "NAS & backups" },
+      { name: "TP-Link EAP225",  spec: "Dual-Band WiFi Access Point", role: "Wireless Networking" },
+      { name: "Switch TP-Link TL-SG108E ", spec: "Managed L2+ Gigabit Switch", role: "Network Distribution" }
     ],
 
     services: [
