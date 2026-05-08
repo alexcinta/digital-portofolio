@@ -1,3 +1,9 @@
+/* ============================================================================
+   📝 PORTFOLIO CONTENT — SINGURUL FIȘIER DE EDITAT
+   ----------------------------------------------------------------------------
+   Editezi DOAR aici. Nu atinge HTML/CSS/JS pentru a actualiza conținutul.
+   ============================================================================ */
+
 const PORTFOLIO_DATA = {
 
   // ── PROFILE ───────────────────────────────────────────────────────────
@@ -28,26 +34,26 @@ const PORTFOLIO_DATA = {
 
   // ── EDUCATION ─────────────────────────────────────────────────────────
   education: [
+    // {
+    //   degree: "Master în Securitatea Rețelelor",
+    //   school: "Universitatea Politehnica București",
+    //   period: "2022 – 2024",
+    //   description: "Specializare în arhitecturi cloud-native și securitate cibernetică."
+    // },
     {
-      degree: "Master în Securitatea Rețelelor",
-      school: "Universitatea Politehnica București",
-      period: "2022 – 2024",
-      description: "Specializare în arhitecturi cloud-native și securitate cibernetică."
-    },
-    {
-      degree: "Licență Inginerie Electronică & Telecomunicații",
-      school: "Universitatea Politehnica București",
-      period: "2018 – 2022",
-      description: "Lucrare de licență despre sisteme IoT bazate pe LoRaWAN."
+      degree: "Licență Facultatea de Informatica",
+      school: "Universitatea din Craiova",
+      period: "2023 – 2026",
+      description: "Lucrare de licență despre dezvoltarea unei aplicatii web & mobile pentru sistemul de invatamant."
     }
   ],
 
   // ── EXPERIENCE ────────────────────────────────────────────────────────
   experience: [
     {
-      role: "Network & Cloud Engineer",
-      company: "Compania ABC",
-      period: "2024 – prezent",
+      role: "IoT 1st Line Service Support Engineer",
+      company: "Vodafone Intelligence Solutions - VOIS",
+      period: "2025 – prezent",
       location: "București",
       bullets: [
         "Proiectare și implementare infrastructură multi-cloud (AWS + Azure).",
@@ -56,9 +62,9 @@ const PORTFOLIO_DATA = {
       ]
     },
     {
-      role: "Junior DevOps",
-      company: "Compania XYZ",
-      period: "2022 – 2024",
+      role: "Team Leader, Projects & Customer Support",
+      company: "Vodafone Romania",
+      period: "2021 – 2025",
       location: "Remote",
       bullets: [
         "Construire pipeline-uri CI/CD cu GitLab.",
