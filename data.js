@@ -62,14 +62,12 @@ const PORTFOLIO_DATA = {
       ]
     },
     {
-      role: "Team Leader, Projects & Customer Support",
+      role: "Team Leader, Customer Support & Projects",
       company: "Vodafone Romania",
-      period: "2021 – 2025",
+      period: "January 2022 - May 2025",
       location: "Remote",
       bullets: [
-        "Construire pipeline-uri CI/CD cu GitLab.",
-        "Monitorizare cu Prometheus + Grafana.",
-        "Mentenanță cluster Kubernetes pe bare-metal."
+        "Led the customer support team and managed operational projects, ensuring high-quality service delivery. Monitored performance, optimized processes, and collaborated cross-functionally to improve overall customer experience."
       ]
     }
   ],
@@ -143,18 +141,18 @@ const PORTFOLIO_DATA = {
       status: "În producție"
     },
 
-    // Pentru a adăuga un proiect nou, copiază blocul de mai sus și modifică-l.
-    {
-      id: "another-project",
-      name: "Numele Proiectului",
-      tagline: "Tagline scurt aici",
-      description: "Descriere completă a proiectului.",
-      images: [],
-      features: ["Funcționalitate 1", "Funcționalitate 2"],
-      technologies: ["Tech 1", "Tech 2"],
-      links: { live: "", github: "", case_study: "" },
-      status: "În dezvoltare"
-    }
+    // // Pentru a adăuga un proiect nou, copiază blocul de mai sus și modifică-l.
+    // {
+    //   id: "another-project",
+    //   name: "Numele Proiectului",
+    //   tagline: "Tagline scurt aici",
+    //   description: "Descriere completă a proiectului.",
+    //   images: [],
+    //   features: ["Funcționalitate 1", "Funcționalitate 2"],
+    //   technologies: ["Tech 1", "Tech 2"],
+    //   links: { live: "", github: "", case_study: "" },
+    //   status: "În dezvoltare"
+    // }
   ],
 
   // ── HOME LAB ──────────────────────────────────────────────────────────
