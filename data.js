@@ -11,8 +11,8 @@ const PORTFOLIO_DATA = {
     name: "Alexandru Cinta",                  // TODO
     initials: "AC",                        // TODO: 2 litere pentru logo
     title: "IoT 1st Line Service Support Engineer",     // TODO
-    tagline: "Construiesc infrastructuri scalabile, sigure și automatizate.",
-    location: "România",        // TODO
+    tagline: "I operate at the intersection of technology and operations, turning complex systems into reliable services, while also helping teams grow and align with a shared vision.",
+    location: "Romania",        // TODO
     avatar: "assets/profile.jpg",
     cv: "assets/cv.pdf",
     available: true                        // true = afișează "Open to work"
@@ -20,16 +20,16 @@ const PORTFOLIO_DATA = {
 
   // ── ABOUT ─────────────────────────────────────────────────────────────
   about: {
-    heading: "Despre mine",
+    heading: "About Me",
     paragraphs: [
-      "Sunt un inginer pasionat de rețele, cloud și sisteme distribuite. Lucrez la intersecția dintre infrastructură și software, construind soluții care îmbină hardware-ul fizic cu serviciile moderne din cloud.",
-      "Am experiență în proiectarea rețelelor, automatizare DevOps, IoT și administrarea unui home lab personal unde experimentez cu microservicii self-hosted."
+      "I'm an engineer passionate about networking, technologies, and distributed systems. I work at the intersection of infrastructure and software, building solutions that blend physical hardware with modern cloud services.",
+      "In my current role within IoT operations, I focus on connectivity, troubleshooting, and service reliability, while continuously exploring ways to optimize and automate infrastructure."
     ],
-    highlights: [
-      { value: "5+",  label: "Ani experiență" },
-      { value: "20+", label: "Proiecte livrate" },
-      { value: "10+", label: "Servicii self-hosted" }
-    ]
+    // highlights: [
+    //   { value: "5+",  label: "Ani experiență" },
+    //   { value: "20+", label: "Proiecte livrate" },
+    //   { value: "10+", label: "Servicii self-hosted" }
+    // ]
   },
 
   // ── EDUCATION ─────────────────────────────────────────────────────────
@@ -41,25 +41,29 @@ const PORTFOLIO_DATA = {
     //   description: "Specializare în arhitecturi cloud-native și securitate cibernetică."
     // },
     {
-      degree: "Licență Facultatea de Informatica",
-      school: "Universitatea din Craiova",
+      degree: "Bachelor’s Degree in Computer Science",
+      school: "University of Craiova",
       period: "2023 – 2026",
-      description: "Lucrare de licență despre dezvoltarea unei aplicatii web & mobile pentru sistemul de invatamant."
+      description: "Bachelor’s thesis focused on the development of a web and mobile application designed for the education system, aiming to improve accessibility and user experience across digital learning platforms."
     }
   ],
 
   // ── EXPERIENCE ────────────────────────────────────────────────────────
   experience: [
     {
-      role: "IoT 1st Line Service Support Engineer",
-      company: "Vodafone Intelligence Solutions - VOIS",
-      period: "2025 – prezent",
-      location: "București",
-      bullets: [
-        "Proiectare și implementare infrastructură multi-cloud (AWS + Azure).",
-        "Automatizare provisioning cu Terraform și Ansible.",
-        "Migrare a 30+ workload-uri către Kubernetes."
-      ]
+
+    role: "IoT 1st Line Service Support Engineer",
+    company: "Vodafone Intelligence Solutions - VOIS",
+    period: "2025 – present",
+    location: "Bucharest",
+    bullets: [
+      "Provide operational support for IoT connectivity and platforms, ensuring service reliability and rapid incident resolution across large-scale deployments.",
+      "Diagnose and troubleshoot network, device, and platform-level issues, working at the intersection of infrastructure and software systems.",
+      "Collaborate with cross-functional teams to improve monitoring, reporting, and overall service performance.",
+      "Contribute to operational efficiency by identifying patterns, building reports, and supporting process automation initiatives.",
+      "Act as a bridge between technical systems and business needs, translating complex issues into clear insights and actionable outcomes."
+    ]
+
     },
     {
       role: "Team Leader, Customer Support & Projects",
@@ -198,4 +202,3 @@ const PORTFOLIO_DATA = {
 };
 
 window.PORTFOLIO_DATA = PORTFOLIO_DATA;
-
