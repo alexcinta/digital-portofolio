@@ -15,7 +15,7 @@ const PORTFOLIO_DATA = {
     location: "Romania",        // TODO
     avatar: "assets/profile.jpg",
     cv: "assets/cv.pdf",
-    available: false                        // true = afișează "Open to work"
+    available: true                        // true = afișează "Open to work"
   },
 
   // ── ABOUT ─────────────────────────────────────────────────────────────
@@ -202,7 +202,7 @@ const PORTFOLIO_DATA = {
 };
 
 window.PORTFOLIO_DATA = PORTFOLIO_DATA;
-=======
+
 /* ============================================================================
    📝 PORTFOLIO CONTENT — SINGURUL FIȘIER DE EDITAT
    ----------------------------------------------------------------------------
@@ -403,4 +403,4 @@ const PORTFOLIO_DATA = {
 };
 
 window.PORTFOLIO_DATA = PORTFOLIO_DATA;
->>>>>>> bb5bac6a49fa49c516a1eeabdc974823274bfa3e
+
