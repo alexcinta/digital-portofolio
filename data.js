@@ -1,3 +1,5 @@
+Sigur, iată conținutul complet pentru data.js :
+
 /* ============================================================================
    📝 PORTFOLIO CONTENT — SINGURUL FIȘIER DE EDITAT
    ----------------------------------------------------------------------------
@@ -8,105 +10,110 @@ const PORTFOLIO_DATA = {
 
   // ── PROFILE ───────────────────────────────────────────────────────────
   profile: {
-    name: "Alexandru Cinta",                  // TODO
-    initials: "AC",                        // TODO: 2 litere pentru logo
-    title: "IoT 1st Line Service Support Engineer",     // TODO
-    tagline: "I operate at the intersection of technology and operations, turning complex systems into reliable services, while also helping teams grow and align with a shared vision.",
-    location: "Romania",        // TODO
-    avatar: "assets/profile.jpg",
-    cv: "assets/cv.pdf",
-    available: true                        // true = afișează "Open to work"
+    name: "Alexandru Cinta",                          // TODO: numele tău
+    initials: "AC",                                    // 2 litere pentru logo
+    title: "IoT 1st Line Service Support Engineer",   // titlul tău profesional
+    tagline: "Construiesc infrastructuri scalabile, sigure și automatizate.",
+    location: "România",                               // orașul / țara
+    avatar: "assets/profile.jpg",                      // poza ta în /assets/
+    cv: "assets/cv.pdf",                               // CV-ul tău în /assets/
+    available: true                                    // true = afișează "Open to work"
   },
 
   // ── ABOUT ─────────────────────────────────────────────────────────────
   about: {
-    heading: "About Me",
+    heading: "Despre mine",
     paragraphs: [
-      "I'm an engineer passionate about networking, technologies, and distributed systems. I work at the intersection of infrastructure and software, building solutions that blend physical hardware with modern cloud services.",
-      "In my current role within IoT operations, I focus on connectivity, troubleshooting, and service reliability, while continuously exploring ways to optimize and automate infrastructure."
+      // TODO: înlocuiește cu propria descriere. Adaugă oricâte paragrafe.
+      "Sunt un inginer pasionat de rețele, cloud și sisteme distribuite. Lucrez la intersecția dintre infrastructură și software, construind soluții care îmbină hardware-ul fizic cu serviciile moderne din cloud.",
+      "Am experiență în proiectarea rețelelor, automatizare DevOps, IoT și administrarea unui home lab personal unde experimentez cu microservicii self-hosted."
     ],
-    // highlights: [
-    //   { value: "5+",  label: "Ani experiență" },
-    //   { value: "20+", label: "Proiecte livrate" },
-    //   { value: "10+", label: "Servicii self-hosted" }
-    // ]
+    highlights: [
+      // Statisticile afișate sub hero
+      { value: "5+",  label: "Ani experiență" },
+      { value: "20+", label: "Proiecte livrate" },
+      { value: "10+", label: "Servicii self-hosted" }
+    ]
   },
 
   // ── EDUCATION ─────────────────────────────────────────────────────────
+  // Adaugă oricâte intrări vrei. Cele mai recente primele.
   education: [
-    // {
-    //   degree: "Master în Securitatea Rețelelor",
-    //   school: "Universitatea Politehnica București",
-    //   period: "2022 – 2024",
-    //   description: "Specializare în arhitecturi cloud-native și securitate cibernetică."
-    // },
     {
-      degree: "Bachelor’s Degree in Computer Science",
-      school: "University of Craiova",
-      period: "2023 – 2026",
-      description: "Bachelor’s thesis focused on the development of a web and mobile application designed for the education system, aiming to improve accessibility and user experience across digital learning platforms."
+      degree: "Master în Securitatea Rețelelor",
+      school: "Universitatea Politehnica București",
+      period: "2022 – 2024",
+      description: "Specializare în arhitecturi cloud-native și securitate cibernetică."
+    },
+    {
+      degree: "Licență Inginerie Electronică & Telecomunicații",
+      school: "Universitatea Politehnica București",
+      period: "2018 – 2022",
+      description: "Lucrare de licență despre sisteme IoT bazate pe LoRaWAN."
     }
   ],
 
   // ── EXPERIENCE ────────────────────────────────────────────────────────
+  // Timeline-ul de carieră. Cele mai recente primele.
   experience: [
     {
-
-    role: "IoT 1st Line Service Support Engineer",
-    company: "Vodafone Intelligence Solutions - VOIS",
-    period: "2025 – present",
-    location: "Bucharest",
-    bullets: [
-      "Provide operational support for IoT connectivity and platforms, ensuring service reliability and rapid incident resolution across large-scale deployments.",
-      "Diagnose and troubleshoot network, device, and platform-level issues, working at the intersection of infrastructure and software systems.",
-      "Collaborate with cross-functional teams to improve monitoring, reporting, and overall service performance.",
-      "Contribute to operational efficiency by identifying patterns, building reports, and supporting process automation initiatives.",
-      "Act as a bridge between technical systems and business needs, translating complex issues into clear insights and actionable outcomes."
-    ]
-
+      role: "Network & Cloud Engineer",
+      company: "Compania ABC",                         // TODO
+      period: "2024 – prezent",
+      location: "București",
+      bullets: [
+        "Proiectare și implementare infrastructură multi-cloud (AWS + Azure).",
+        "Automatizare provisioning cu Terraform și Ansible.",
+        "Migrare a 30+ workload-uri către Kubernetes."
+      ]
     },
     {
-      role: "Team Leader, Customer Support & Projects",
-      company: "Vodafone Romania",
-      period: "January 2022 - May 2025",
+      role: "Junior DevOps",
+      company: "Compania XYZ",                         // TODO
+      period: "2022 – 2024",
       location: "Remote",
       bullets: [
-        "Led the customer support team and managed operational projects, ensuring high-quality service delivery. Monitored performance, optimized processes, and collaborated cross-functionally to improve overall customer experience."
+        "Construire pipeline-uri CI/CD cu GitLab.",
+        "Monitorizare cu Prometheus + Grafana.",
+        "Mentenanță cluster Kubernetes pe bare-metal."
       ]
     }
   ],
 
-  // ── SKILLS (icon: network | cloud | cpu | code) ──────────────────────
+  // ── SKILLS ────────────────────────────────────────────────────────────
+  // Skill-urile sunt grupate logic. Adaugă/șterge orice grup sau skill.
+  // `level` este între 0–100 (folosit pentru bara vizuală).
+  // `icon` poate fi: network | cloud | cpu | code
   skills: [
     {
-      group: "Power Bi",
+      group: "Networking",
       icon: "network",
       items: [
-        { name: "Operational Dashboards", level: 90 },
-        { name: "KPI Dashboards",        level: 85 },
-        // { name: "VLAN / VXLAN",      level: 88 },
-        // { name: "Firewall (pfSense, FortiGate)", level: 80 }
+        { name: "Cisco IOS / NX-OS",            level: 90 },
+        { name: "BGP / OSPF",                   level: 85 },
+        { name: "VLAN / VXLAN",                 level: 88 },
+        { name: "Firewall (pfSense, FortiGate)", level: 80 }
       ]
     },
     {
-      group: "Leadership & Management",
+      group: "Cloud & DevOps",
       icon: "cloud",
       items: [
-        { name: "Team Leadership", level: 95 },
-        { name: "People Management", level: 90 },
-        { name: "Stakeholder Management", level: 85 },
-        { name: "Project Management", level: 85 },
-        { name: "Process Improvement",     level: 85 }
+        { name: "AWS",        level: 85 },
+        { name: "Azure",      level: 75 },
+        { name: "Kubernetes", level: 80 },
+        { name: "Terraform",  level: 88 },
+        { name: "Docker",     level: 92 }
       ]
     },
     {
       group: "IoT & Embedded",
       icon: "cpu",
       items: [
-        { name: "Raspberry Pi", level: 90 },
+        { name: "Raspberry Pi",    level: 90 },
         { name: "ESP32 / Arduino", level: 85 },
-        { name: "MQTT",          level: 88 },
-        { name: "LoRaWAN",       level: 70 }
+        { name: "MQTT",            level: 88 },
+        { name: "LoRaWAN",         level: 70 }
       ]
     },
     {
@@ -122,12 +129,15 @@ const PORTFOLIO_DATA = {
   ],
 
   // ── PROJECTS ──────────────────────────────────────────────────────────
+  // Adaugă oricâte proiecte vrei. Imaginile se pun în /assets/projects/
   projects: [
     {
       id: "edifya",
       name: "Edifya",
       tagline: "Sistem complet de management școlar — web & mobile",
       description: "Platformă SaaS pentru școli: gestiune elevi, profesori, prezență, note, comunicare părinți. Aplicație mobile cross-platform pentru părinți + dashboard web pentru administrație.",
+      // Pune imaginile în /assets/projects/edifya-1.jpg etc.
+      // Lasă array-ul gol [] dacă încă nu ai capturi.
       images: [
         "assets/projects/edifya-1.jpg",
         "assets/projects/edifya-2.jpg"
@@ -140,46 +150,56 @@ const PORTFOLIO_DATA = {
         "Plată online a taxelor școlare",
         "Aplicație mobilă iOS + Android"
       ],
-      technologies: ["React", "React Native", "Node.js", "PostgreSQL"],
-      links: { live: "", github: "", case_study: "" },
-      status: "În producție"
+      technologies: ["React", "React Native", "Node.js", "PostgreSQL", "Docker", "AWS"],
+      links: {
+        // Lasă "" gol dacă nu există încă link
+        live: "",
+        github: "",
+        case_study: ""
+      },
+      status: "În producție"   // ex: "În producție", "Beta", "În dezvoltare"
     },
 
-    // // Pentru a adăuga un proiect nou, copiază blocul de mai sus și modifică-l.
-    // {
-    //   id: "another-project",
-    //   name: "Numele Proiectului",
-    //   tagline: "Tagline scurt aici",
-    //   description: "Descriere completă a proiectului.",
-    //   images: [],
-    //   features: ["Funcționalitate 1", "Funcționalitate 2"],
-    //   technologies: ["Tech 1", "Tech 2"],
-    //   links: { live: "", github: "", case_study: "" },
-    //   status: "În dezvoltare"
-    // }
+    // 🔹 Pentru a adăuga un proiect nou, copiază blocul de mai sus și modifică-l.
+    {
+      id: "another-project",
+      name: "Numele Proiectului",
+      tagline: "Tagline scurt aici",
+      description: "Descriere completă a proiectului.",
+      images: [],
+      features: ["Funcționalitate 1", "Funcționalitate 2"],
+      technologies: ["Tech 1", "Tech 2"],
+      links: { live: "", github: "", case_study: "" },
+      status: "În dezvoltare"
+    }
   ],
 
   // ── HOME LAB ──────────────────────────────────────────────────────────
+  // Foarte ușor de actualizat: adaugă/șterge servicii și device-uri.
   homelab: {
     intro: "Laboratorul meu de acasă — locul unde testez, învăț și self-host.",
 
+    // Hardware fizic
     hardware: [
-      { name: "Lenovo Tiny M920Q",     spec: "Intel Core i5, 32GB RAM, SSD NVMe", role: "Proxmox Hypervisor (VMs)" },
-      { name: "Lenovo ThinkCentre M710q",  spec: "Intel Core i5, 16GB RAM, SSD", role: "Router (OPNsense)" },
-      // { name: "Synology DS920+",      spec: "4× 8TB WD Red, BTRFS", role: "NAS & backups" },
-      { name: "TP-Link EAP225",  spec: "Dual-Band WiFi Access Point", role: "Wireless Networking" },
-      { name: "Switch TP-Link TL-SG108E ", spec: "Managed L2+ Gigabit Switch", role: "Network Distribution" }
+      // TODO: înlocuiește cu setup-ul tău
+      { name: "Server Dell R720",     spec: "2× Xeon E5-2670, 128GB RAM, 8TB RAID-Z2", role: "Hypervisor Proxmox" },
+      { name: "Raspberry Pi 4 (×3)",  spec: "8GB RAM, SSD NVMe USB",                   role: "K3s cluster" },
+      { name: "Synology DS920+",      spec: "4× 8TB WD Red, BTRFS",                    role: "NAS & backups" },
+      { name: "UniFi Dream Machine",  spec: "Router + controller WiFi",                role: "Networking & VLAN" },
+      { name: "Switch UniFi 24-port", spec: "Managed L2+, PoE",                        role: "Distribution" }
     ],
 
+    // Servicii self-hosted (microservicii / containere)
+    // 🔹 Adaugă un serviciu nou copiind un obiect.
     services: [
       { name: "Home Assistant",       category: "Smart Home",   description: "Automatizare casă (lumini, senzori, cameră)" },
       { name: "Pi-hole",              category: "Network",      description: "DNS sinkhole — blocare reclame la nivel de rețea" },
-      // { name: "Nextcloud",            category: "Productivity", description: "Cloud personal pentru fișiere, calendar, contacte" },
+      { name: "Nextcloud",            category: "Productivity", description: "Cloud personal pentru fișiere, calendar, contacte" },
       { name: "Jellyfin",             category: "Media",        description: "Server media pentru filme și muzică" },
       { name: "Gitea",                category: "DevOps",       description: "Git self-hosted pentru proiectele personale" },
       { name: "Grafana + Prometheus", category: "Monitoring",   description: "Dashboards și metrici pentru toată infrastructura" },
-      // { name: "Vaultwarden",          category: "Security",     description: "Manager de parole self-hosted (Bitwarden compatible)" },
-      // { name: "Traefik",              category: "Network",      description: "Reverse proxy cu HTTPS automat (Let's Encrypt)" }
+      { name: "Vaultwarden",          category: "Security",     description: "Manager de parole self-hosted (Bitwarden compatible)" },
+      { name: "Traefik",              category: "Network",      description: "Reverse proxy cu HTTPS automat (Let's Encrypt)" }
     ]
   },
 
@@ -187,10 +207,14 @@ const PORTFOLIO_DATA = {
   contact: {
     heading: "Hai să discutăm",
     intro: "Sunt deschis pentru colaborări, oportunități și proiecte interesante.",
-    email:    "alexandru.cinta@yahoo.com",                       // TODO
-    linkedin: "https://linkedin.com/in/username",        // TODO
-    github:   "https://github.com/alexcinta",             // TODO
-    twitter:  "",                                        // lasă "" gol pentru a ascunde
+
+    // TODO: înlocuiește cu datele tale reale
+    email:    "email@example.com",
+    linkedin: "https://linkedin.com/in/username",
+    github:   "https://github.com/alexcinta",
+
+    // Linkuri opționale — lasă "" gol dacă nu vrei să le afișezi
+    twitter:  "",
     website:  ""
   },
 
