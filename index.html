@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,9 +30,9 @@
       </a>
 
       <nav class="nav-links" aria-label="Primary">
-        <a href="#about"    data-testid="nav-link-about">Despre</a>
+        <a href="#about"    data-testid="nav-link-about">About</a>
         <a href="#skills"   data-testid="nav-link-skills">Skills</a>
-        <a href="#projects" data-testid="nav-link-projects">Proiecte</a>
+        <a href="#projects" data-testid="nav-link-projects">Projects</a>
         <a href="#homelab"  data-testid="nav-link-homelab">Home Lab</a>
         <a href="#contact"  data-testid="nav-link-contact">Contact</a>
       </nav>
@@ -73,17 +73,17 @@
             <span id="hero-availability">Open to work</span>
           </span>
           <h1 class="hero-title">
-            Salut, eu sunt <span class="accent" id="hero-name">Numele Tău</span>.
+            Hi, I am <span class="accent" id="hero-name">Numele Tău</span>.
           </h1>
           <p class="hero-role" id="hero-role">Network & Cloud Engineer</p>
           <p class="hero-tagline" id="hero-tagline">Construiesc infrastructuri scalabile, sigure și automatizate.</p>
 
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary" data-testid="hero-cta-projects">
-              Vezi proiectele
+              View projects
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
-            <a href="#contact" class="btn btn-outline" data-testid="hero-cta-contact">Contactează-mă</a>
+            <a href="#contact" class="btn btn-outline" data-testid="hero-cta-contact">Contact me</a>
           </div>
 
           <div class="hero-stats" id="hero-stats" data-testid="hero-stats"></div>
@@ -196,7 +196,7 @@
 
           <form id="contact-form" class="contact-form reveal" data-testid="contact-form" novalidate>
             <div class="form-row">
-              <label for="form-name">Nume</label>
+              <label for="form-name">Name</label>
               <input type="text" id="form-name" name="name" required data-testid="contact-name-input" />
             </div>
             <div class="form-row">
@@ -204,14 +204,14 @@
               <input type="email" id="form-email" name="email" required data-testid="contact-email-input" />
             </div>
             <div class="form-row">
-              <label for="form-message">Mesaj</label>
+              <label for="form-message">Message</label>
               <textarea id="form-message" name="message" rows="5" required data-testid="contact-message-input"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" data-testid="contact-submit-btn">
-              Trimite mesaj
+              Send message
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
             </button>
-            <p class="form-hint">Se va deschide clientul tău de email.</p>
+            <p class="form-hint">Your email client will open.</p>
           </form>
         </div>
       </div>
@@ -221,7 +221,7 @@
   <footer class="footer" data-testid="footer">
     <div class="container footer-inner">
       <span id="footer-copy">© <span id="footer-year"></span> · Built with HTML · CSS · JS</span>
-      <a href="#hero" class="footer-back" data-testid="back-to-top">↑ Sus</a>
+      <a href="#hero" class="footer-back" data-testid="back-to-top">↑ Top</a>
     </div>
   </footer>
 
