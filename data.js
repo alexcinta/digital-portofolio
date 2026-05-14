@@ -148,17 +148,17 @@ const PORTFOLIO_DATA = {
     },
 
     // 🔹 Pentru a adăuga un proiect nou, copiază blocul de mai sus.
-    {
-      id: "another-project",
-      name: "Project Name",
-      tagline: "Short tagline here",
-      description: "Full project description.",
-      images: [],
-      features: ["Feature 1", "Feature 2"],
-      technologies: ["Tech 1", "Tech 2"],
-      links: { live: "", github: "", case_study: "" },
-      status: "In development"
-    }
+    // {
+    //   id: "another-project",
+    //   name: "Project Name",
+    //   tagline: "Short tagline here",
+    //   description: "Full project description.",
+    //   images: [],
+    //   features: ["Feature 1", "Feature 2"],
+    //   technologies: ["Tech 1", "Tech 2"],
+    //   links: { live: "", github: "", case_study: "" },
+    //   status: "In development"
+    // }
   ],
 
   // ── HOME LAB ──────────────────────────────────────────────────────────
