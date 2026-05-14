@@ -8,88 +8,81 @@ const PORTFOLIO_DATA = {
 
   // ── PROFILE ───────────────────────────────────────────────────────────
   profile: {
-    name: "Alexandru Cinta",                          // TODO: numele tău
-    initials: "AC",                                    // 2 litere pentru logo
-    title: "IoT 1st Line Service Support Engineer",   // titlul tău profesional
-    tagline: "Construiesc infrastructuri scalabile, sigure și automatizate.",
-    location: "România",                               // orașul / țara
-    avatar: "assets/profile.jpg",                      // poza ta în /assets/
-    cv: "assets/cv.pdf",                               // CV-ul tău în /assets/
-    available: true                                    // true = afișează "Open to work"
+    name: "Alexandru Cinta",
+    initials: "AC",
+    title: "IoT 1st Line Service Support Engineer",
+    tagline: "Building scalable, secure and automated infrastructures.",
+    location: "Romania",
+    avatar: "assets/profile.jpg",
+    cv: "assets/cv.pdf",
+    available: true
   },
 
   // ── ABOUT ─────────────────────────────────────────────────────────────
   about: {
-    heading: "Despre mine",
+    heading: "About me",
     paragraphs: [
-      // TODO: înlocuiește cu propria descriere. Adaugă oricâte paragrafe.
-      "Sunt un inginer pasionat de rețele, cloud și sisteme distribuite. Lucrez la intersecția dintre infrastructură și software, construind soluții care îmbină hardware-ul fizic cu serviciile moderne din cloud.",
-      "Am experiență în proiectarea rețelelor, automatizare DevOps, IoT și administrarea unui home lab personal unde experimentez cu microservicii self-hosted."
+      "I'm an engineer passionate about networks, cloud and distributed systems. I work at the intersection of infrastructure and software, building solutions that blend physical hardware with modern cloud services.",
+      "I have experience in network design, DevOps automation, IoT and managing a personal home lab where I experiment with self-hosted microservices."
     ],
     highlights: [
-      // Statisticile afișate sub hero
-      { value: "5+",  label: "Ani experiență" },
-      { value: "20+", label: "Proiecte livrate" },
-      { value: "10+", label: "Servicii self-hosted" }
+      { value: "5+",  label: "Years of experience" },
+      { value: "20+", label: "Projects delivered" },
+      { value: "10+", label: "Self-hosted services" }
     ]
   },
 
   // ── EDUCATION ─────────────────────────────────────────────────────────
-  // Adaugă oricâte intrări vrei. Cele mai recente primele.
   education: [
     {
-      degree: "Master în Securitatea Rețelelor",
-      school: "Universitatea Politehnica București",
+      degree: "MSc in Network Security",
+      school: "Politehnica University of Bucharest",
       period: "2022 – 2024",
-      description: "Specializare în arhitecturi cloud-native și securitate cibernetică."
+      description: "Specialization in cloud-native architectures and cybersecurity."
     },
     {
-      degree: "Licență Inginerie Electronică & Telecomunicații",
-      school: "Universitatea Politehnica București",
+      degree: "BSc in Electronics & Telecommunications Engineering",
+      school: "Politehnica University of Bucharest",
       period: "2018 – 2022",
-      description: "Lucrare de licență despre sisteme IoT bazate pe LoRaWAN."
+      description: "Bachelor thesis on LoRaWAN-based IoT systems."
     }
   ],
 
   // ── EXPERIENCE ────────────────────────────────────────────────────────
-  // Timeline-ul de carieră. Cele mai recente primele.
   experience: [
     {
       role: "Network & Cloud Engineer",
-      company: "Compania ABC",                         // TODO
-      period: "2024 – prezent",
-      location: "București",
+      company: "Company ABC",
+      period: "2024 – present",
+      location: "Bucharest",
       bullets: [
-        "Proiectare și implementare infrastructură multi-cloud (AWS + Azure).",
-        "Automatizare provisioning cu Terraform și Ansible.",
-        "Migrare a 30+ workload-uri către Kubernetes."
+        "Design and implementation of multi-cloud infrastructure (AWS + Azure).",
+        "Provisioning automation with Terraform and Ansible.",
+        "Migration of 30+ workloads to Kubernetes."
       ]
     },
     {
       role: "Junior DevOps",
-      company: "Compania XYZ",                         // TODO
+      company: "Company XYZ",
       period: "2022 – 2024",
       location: "Remote",
       bullets: [
-        "Construire pipeline-uri CI/CD cu GitLab.",
-        "Monitorizare cu Prometheus + Grafana.",
-        "Mentenanță cluster Kubernetes pe bare-metal."
+        "Built CI/CD pipelines with GitLab.",
+        "Monitoring with Prometheus + Grafana.",
+        "Maintenance of a bare-metal Kubernetes cluster."
       ]
     }
   ],
 
-  // ── SKILLS ────────────────────────────────────────────────────────────
-  // Skill-urile sunt grupate logic. Adaugă/șterge orice grup sau skill.
-  // `level` este între 0–100 (folosit pentru bara vizuală).
-  // `icon` poate fi: network | cloud | cpu | code
+  // ── SKILLS (icon: network | cloud | cpu | code) ──────────────────────
   skills: [
     {
       group: "Networking",
       icon: "network",
       items: [
-        { name: "Cisco IOS / NX-OS",            level: 90 },
-        { name: "BGP / OSPF",                   level: 85 },
-        { name: "VLAN / VXLAN",                 level: 88 },
+        { name: "Cisco IOS / NX-OS",             level: 90 },
+        { name: "BGP / OSPF",                    level: 85 },
+        { name: "VLAN / VXLAN",                  level: 88 },
         { name: "Firewall (pfSense, FortiGate)", level: 80 }
       ]
     },
@@ -115,7 +108,7 @@ const PORTFOLIO_DATA = {
       ]
     },
     {
-      group: "Programare & Scripting",
+      group: "Programming & Scripting",
       icon: "code",
       items: [
         { name: "Python",     level: 88 },
@@ -127,91 +120,80 @@ const PORTFOLIO_DATA = {
   ],
 
   // ── PROJECTS ──────────────────────────────────────────────────────────
-  // Adaugă oricâte proiecte vrei. Imaginile se pun în /assets/projects/
   projects: [
     {
       id: "edifya",
       name: "Edifya",
-      tagline: "Sistem complet de management școlar — web & mobile",
-      description: "Platformă SaaS pentru școli: gestiune elevi, profesori, prezență, note, comunicare părinți. Aplicație mobile cross-platform pentru părinți + dashboard web pentru administrație.",
-      // Pune imaginile în /assets/projects/edifya-1.jpg etc.
-      // Lasă array-ul gol [] dacă încă nu ai capturi.
+      tagline: "Complete school management system — web & mobile",
+      description: "SaaS platform for schools: student, teacher, attendance and grade management, plus parent communication. Cross-platform mobile app for parents + web dashboard for administration.",
       images: [
         "assets/projects/edifya-1.jpg",
         "assets/projects/edifya-2.jpg"
       ],
       features: [
-        "Autentificare multi-rol (admin, profesor, părinte, elev)",
-        "Catalog electronic & raportare prezență în timp real",
-        "Notificări push către părinți (note, absențe, evenimente)",
-        "Generare automată de rapoarte PDF",
-        "Plată online a taxelor școlare",
-        "Aplicație mobilă iOS + Android"
+        "Multi-role authentication (admin, teacher, parent, student)",
+        "Electronic gradebook & real-time attendance reporting",
+        "Push notifications to parents (grades, absences, events)",
+        "Automated PDF report generation",
+        "Online school fee payments",
+        "Mobile app for iOS + Android"
       ],
       technologies: ["React", "React Native", "Node.js", "PostgreSQL", "Docker", "AWS"],
       links: {
-        // Lasă "" gol dacă nu există încă link
         live: "",
         github: "",
         case_study: ""
       },
-      status: "În producție"   // ex: "În producție", "Beta", "În dezvoltare"
+      status: "In production"
     },
 
-    // 🔹 Pentru a adăuga un proiect nou, copiază blocul de mai sus și modifică-l.
+    // 🔹 Pentru a adăuga un proiect nou, copiază blocul de mai sus.
     {
       id: "another-project",
-      name: "Numele Proiectului",
-      tagline: "Tagline scurt aici",
-      description: "Descriere completă a proiectului.",
+      name: "Project Name",
+      tagline: "Short tagline here",
+      description: "Full project description.",
       images: [],
-      features: ["Funcționalitate 1", "Funcționalitate 2"],
+      features: ["Feature 1", "Feature 2"],
       technologies: ["Tech 1", "Tech 2"],
       links: { live: "", github: "", case_study: "" },
-      status: "În dezvoltare"
+      status: "In development"
     }
   ],
 
   // ── HOME LAB ──────────────────────────────────────────────────────────
-  // Foarte ușor de actualizat: adaugă/șterge servicii și device-uri.
   homelab: {
-    intro: "Laboratorul meu de acasă — locul unde testez, învăț și self-host.",
+    intro: "My home lab — where I test, learn and self-host.",
 
-    // Hardware fizic
     hardware: [
-      // TODO: înlocuiește cu setup-ul tău
-      { name: "Server Dell R720",     spec: "2× Xeon E5-2670, 128GB RAM, 8TB RAID-Z2", role: "Hypervisor Proxmox" },
-      { name: "Raspberry Pi 4 (×3)",  spec: "8GB RAM, SSD NVMe USB",                   role: "K3s cluster" },
+      { name: "Dell R720 Server",     spec: "2× Xeon E5-2670, 128GB RAM, 8TB RAID-Z2", role: "Proxmox hypervisor" },
+      { name: "Raspberry Pi 4 (×3)",  spec: "8GB RAM, NVMe USB SSD",                   role: "K3s cluster" },
       { name: "Synology DS920+",      spec: "4× 8TB WD Red, BTRFS",                    role: "NAS & backups" },
-      { name: "UniFi Dream Machine",  spec: "Router + controller WiFi",                role: "Networking & VLAN" },
-      { name: "Switch UniFi 24-port", spec: "Managed L2+, PoE",                        role: "Distribution" }
+      { name: "UniFi Dream Machine",  spec: "Router + WiFi controller",                role: "Networking & VLAN" },
+      { name: "UniFi Switch 24-port", spec: "Managed L2+, PoE",                        role: "Distribution" }
     ],
 
-    // Servicii self-hosted (microservicii / containere)
-    // 🔹 Adaugă un serviciu nou copiind un obiect.
     services: [
-      { name: "Home Assistant",       category: "Smart Home",   description: "Automatizare casă (lumini, senzori, cameră)" },
-      { name: "Pi-hole",              category: "Network",      description: "DNS sinkhole — blocare reclame la nivel de rețea" },
-      { name: "Nextcloud",            category: "Productivity", description: "Cloud personal pentru fișiere, calendar, contacte" },
-      { name: "Jellyfin",             category: "Media",        description: "Server media pentru filme și muzică" },
-      { name: "Gitea",                category: "DevOps",       description: "Git self-hosted pentru proiectele personale" },
-      { name: "Grafana + Prometheus", category: "Monitoring",   description: "Dashboards și metrici pentru toată infrastructura" },
-      { name: "Vaultwarden",          category: "Security",     description: "Manager de parole self-hosted (Bitwarden compatible)" },
-      { name: "Traefik",              category: "Network",      description: "Reverse proxy cu HTTPS automat (Let's Encrypt)" }
+      { name: "Home Assistant",       category: "Smart Home",   description: "Home automation (lights, sensors, cameras)" },
+      { name: "Pi-hole",              category: "Network",      description: "DNS sinkhole — network-wide ad blocking" },
+      { name: "Nextcloud",            category: "Productivity", description: "Personal cloud for files, calendar, contacts" },
+      { name: "Jellyfin",             category: "Media",        description: "Media server for movies and music" },
+      { name: "Gitea",                category: "DevOps",       description: "Self-hosted Git for personal projects" },
+      { name: "Grafana + Prometheus", category: "Monitoring",   description: "Dashboards and metrics for the whole stack" },
+      { name: "Vaultwarden",          category: "Security",     description: "Self-hosted password manager (Bitwarden-compatible)" },
+      { name: "Traefik",              category: "Network",      description: "Reverse proxy with automatic HTTPS (Let's Encrypt)" }
     ]
   },
 
   // ── CONTACT ───────────────────────────────────────────────────────────
   contact: {
-    heading: "Hai să discutăm",
-    intro: "Sunt deschis pentru colaborări, oportunități și proiecte interesante.",
+    heading: "Let's talk",
+    intro: "I'm open to collaborations, opportunities and interesting projects.",
 
-    // TODO: înlocuiește cu datele tale reale
     email:    "email@example.com",
     linkedin: "https://linkedin.com/in/username",
     github:   "https://github.com/alexcinta",
 
-    // Linkuri opționale — lasă "" gol dacă nu vrei să le afișezi
     twitter:  "",
     website:  ""
   },
