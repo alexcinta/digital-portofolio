@@ -71,7 +71,7 @@ const PORTFOLIO_DATA = {
         "Demonstrated expertise in delivering exceptional customer service and successfully driving project initiatives. ",
         "Committed to fostering a collaborative work environment, optimizing processes, and achieving outstanding results. Skilled in team management, problem-solving, and project execution."
       ]
-    }
+    },
          {
       role: "IoT 1st Line Service Support Engineer",
       company: "VOIS",
