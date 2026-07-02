@@ -40,12 +40,12 @@ const PORTFOLIO_DATA = {
       period: "2022 – 2024",
       description: "Specialization in cloud-native architectures and cybersecurity."
     },
-    // {
-    //   degree: "BSc in Electronics & Telecommunications Engineering",
-    //   school: "Politehnica University of Bucharest",
-    //   period: "2018 – 2022",
-    //   description: "Bachelor thesis on LoRaWAN-based IoT systems."
-    // }
+    {
+      degree: "Full Stack Developer",
+      school: "Software Development Academy",
+      period: "December 2020 – August 2023",
+      description: "In this role, I am dedicated to enhancing my skills, building my professional network, and contributing to the success of a dynamic IT organization. I am a quick learner, a team player, and am committed to staying current with the latest technologies and trends in the industry."
+    }
   ],
 
   // ── EXPERIENCE ────────────────────────────────────────────────────────
@@ -94,7 +94,7 @@ const PORTFOLIO_DATA = {
         { name: "Cisco IOS / NX-OS",             level: 90 },
         { name: "BGP / OSPF",                    level: 85 },
         { name: "VLAN / VXLAN",                  level: 88 },
-        { name: "Firewall (pfSense, FortiGate)", level: 80 }
+        { name: "Firewall (OPNSense)", level: 80 }
       ]
     },
     {
