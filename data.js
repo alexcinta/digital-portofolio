@@ -35,17 +35,12 @@ const PORTFOLIO_DATA = {
   // ── EDUCATION ─────────────────────────────────────────────────────────
   education: [
     {
-      degree: "MSc in Network Security",
-      school: "Politehnica University of Bucharest",
-      period: "2022 – 2024",
-      description: "Specialization in cloud-native architectures and cybersecurity."
-    },
-    {
       degree: "Full Stack Developer",
       school: "Software Development Academy",
       period: "December 2020 – August 2023",
       description: "In this role, I am dedicated to enhancing my skills, building my professional network, and contributing to the success of a dynamic IT organization. I am a quick learner, a team player, and am committed to staying current with the latest technologies and trends in the industry."
     }
+
   ],
 
   // ── EXPERIENCE ────────────────────────────────────────────────────────
