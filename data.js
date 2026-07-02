@@ -72,6 +72,17 @@ const PORTFOLIO_DATA = {
         "Committed to fostering a collaborative work environment, optimizing processes, and achieving outstanding results. Skilled in team management, problem-solving, and project execution."
       ]
     }
+         {
+      role: "IoT 1st Line Service Support Engineer",
+      company: "VOIS",
+      period: "May 2025 – Present",
+      location: "Remote",
+      // bullets: [
+      //   "As a team leader, I am passionate about developing and managing high-performing teams.",
+      //   "My strong communication and collaboration skills enable me to build relationships with team members, stakeholders, and clients to achieve shared goals. I have a proven track record of driving success by motivating and guiding team members to exceed performance targets and develop their skills.",
+      //   "With a focus on continuous improvement, I thrive on identifying and implementing innovative solutions to enhance team performance and optimize processes."
+      // ]
+    }
   ],
 
   // ── SKILLS (icon: network | cloud | cpu | code) ──────────────────────
