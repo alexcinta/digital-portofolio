@@ -98,11 +98,11 @@ const PORTFOLIO_DATA = {
       ]
     },
     {
-      group: "Cloud & DevOps",
+      group: "Leadership",
       icon: "cloud",
       items: [
-        { name: "AWS",        level: 85 },
-        { name: "Azure",      level: 75 },
+        { name: "Building teams",        level: 85 },
+        { name: "Operational skills",      level: 75 },
         { name: "Kubernetes", level: 80 },
         { name: "Terraform",  level: 88 },
         { name: "Docker",     level: 92 }
@@ -177,7 +177,7 @@ const PORTFOLIO_DATA = {
     intro: "My home lab — where I test, learn and self-host.",
 
     hardware: [
-      { name: "Dell R720 Server",     spec: "2× Xeon E5-2670, 128GB RAM, 8TB RAID-Z2", role: "Proxmox hypervisor" },
+      { name: "Lenovo TinyPC M920Q",     spec: "2× Xeon E5-2670, 128GB RAM, 8TB RAID-Z2", role: "Proxmox hypervisor" },
       { name: "Raspberry Pi 4 (×3)",  spec: "8GB RAM, NVMe USB SSD",                   role: "K3s cluster" },
       { name: "Synology DS920+",      spec: "4× 8TB WD Red, BTRFS",                    role: "NAS & backups" },
       { name: "UniFi Dream Machine",  spec: "Router + WiFi controller",                role: "Networking & VLAN" },
@@ -201,8 +201,8 @@ const PORTFOLIO_DATA = {
     heading: "Let's talk",
     intro: "I'm open to collaborations, opportunities and interesting projects.",
 
-    email:    "email@example.com",
-    linkedin: "https://linkedin.com/in/username",
+    email:    "alexandru.cinta@yahoo.com",
+    linkedin: "www.linkedin.com/in/alexandru-cinta-347262223",
     github:   "https://github.com/alexcinta",
 
     twitter:  "",
