@@ -172,11 +172,11 @@ const PORTFOLIO_DATA = {
     intro: "My home lab — where I test, learn and self-host.",
 
     hardware: [
-      { name: "Lenovo TinyPC M920Q",     spec: "2× Xeon E5-2670, 128GB RAM, 8TB RAID-Z2", role: "Proxmox hypervisor" },
-      { name: "Raspberry Pi 4 (×3)",  spec: "8GB RAM, NVMe USB SSD",                   role: "K3s cluster" },
-      { name: "Synology DS920+",      spec: "4× 8TB WD Red, BTRFS",                    role: "NAS & backups" },
-      { name: "UniFi Dream Machine",  spec: "Router + WiFi controller",                role: "Networking & VLAN" },
-      { name: "UniFi Switch 24-port", spec: "Managed L2+, PoE",                        role: "Distribution" }
+      { name: "Mini PC Lenovo M920Q",     spec: "Hexa Core i5-8500T, 16GB RAM, 256GB SSD", role: "Proxmox hypervisor" },
+      { name: "Mini PC Lenovo M710Q",  spec: " Intel Quad Core i5-7500T, 8GB RAM", role: "Router with OPNSense" },
+      { name: "TL-SG108E | 8-Port Gigabit Easy Smart Switch - TP-Link", role: "Switch" },
+      { name: "TP-Link Omada EAP225 puncte de acces WLAN 1350 Mbit/s Alb Power over Ethernet (PoE) Suport", role: "WiFI" }
+      // { name: "UniFi Switch 24-port", spec: "Managed L2+, PoE",                        role: "Distribution" }
     ],
 
     services: [
