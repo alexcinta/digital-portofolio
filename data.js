@@ -40,36 +40,36 @@ const PORTFOLIO_DATA = {
       period: "2022 – 2024",
       description: "Specialization in cloud-native architectures and cybersecurity."
     },
-    {
-      degree: "BSc in Electronics & Telecommunications Engineering",
-      school: "Politehnica University of Bucharest",
-      period: "2018 – 2022",
-      description: "Bachelor thesis on LoRaWAN-based IoT systems."
-    }
+    // {
+    //   degree: "BSc in Electronics & Telecommunications Engineering",
+    //   school: "Politehnica University of Bucharest",
+    //   period: "2018 – 2022",
+    //   description: "Bachelor thesis on LoRaWAN-based IoT systems."
+    // }
   ],
 
   // ── EXPERIENCE ────────────────────────────────────────────────────────
   experience: [
     {
-      role: "Network & Cloud Engineer",
-      company: "Company ABC",
-      period: "2024 – present",
-      location: "Bucharest",
+      role: "Team Leader, Customer Service",
+      company: "Vodafone Romania",
+      period: "January 2022 – June 2023",
+      location: "Craiova",
       bullets: [
-        "Design and implementation of multi-cloud infrastructure (AWS + Azure).",
-        "Provisioning automation with Terraform and Ansible.",
-        "Migration of 30+ workloads to Kubernetes."
+        "As a team leader, I am passionate about developing and managing high-performing teams.",
+        "My strong communication and collaboration skills enable me to build relationships with team members, stakeholders, and clients to achieve shared goals. I have a proven track record of driving success by motivating and guiding team members to exceed performance targets and develop their skills.",
+        "With a focus on continuous improvement, I thrive on identifying and implementing innovative solutions to enhance team performance and optimize processes."
       ]
     },
     {
-      role: "Junior DevOps",
-      company: "Company XYZ",
-      period: "2022 – 2024",
+      role: "Team Leader, Customer Support & Projects",
+      company: "Vodafone Romania",
+      period: "July 2023 – April 2025",
       location: "Remote",
       bullets: [
-        "Built CI/CD pipelines with GitLab.",
-        "Monitoring with Prometheus + Grafana.",
-        "Maintenance of a bare-metal Kubernetes cluster."
+        "Experienced Team Leader with a proven track record in managing customer support and project teams.",
+        "Demonstrated expertise in delivering exceptional customer service and successfully driving project initiatives. ",
+        "Committed to fostering a collaborative work environment, optimizing processes, and achieving outstanding results. Skilled in team management, problem-solving, and project execution."
       ]
     }
   ],
