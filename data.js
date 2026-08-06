@@ -169,11 +169,11 @@ const PORTFOLIO_DATA = {
 
   // ── HOME LAB ──────────────────────────────────────────────────────────
   homelab: {
-    intro: "My home lab — where I test, learn and self-host.",
+    intro: "A self-hosted infrastructure project built around Proxmox, OPNsense, Pi-hole, Home Assistant and Tailscale. The environment is used to learn networking, virtualization, DNS services, automation and secure remote access while documenting the entire deployment journey.",
 
     hardware: [
-      { name: "Mini PC Lenovo M920Q",     spec: "Hexa Core i5-8500T, 16GB RAM, 256GB SSD", role: "Proxmox hypervisor" },
-      { name: "Mini PC Lenovo M710Q",  spec: " Intel Quad Core i5-7500T, 8GB RAM", role: "Router with OPNSense" },
+      { name: "Lenovo ThinkCentre M920Q", spec: "Intel i5-8500T, 16GB RAM, 256GB SSD", role: "Proxmox hypervisor" },
+      { name: "Lenovo ThinkCentre M710Q",  spec: "Intel i5-7500T, 8GB RAM", role: "OPNsense Firewall & Router" },
       { name: "TL-SG108E | 8-Port Gigabit Easy Smart Switch - TP-Link", role: "Switch" },
       { name: "TP-Link Omada EAP225 puncte de acces WLAN 1350 Mbit/s Alb Power over Ethernet (PoE) Suport", role: "WiFI" }
       // { name: "UniFi Switch 24-port", spec: "Managed L2+, PoE",                        role: "Distribution" }
@@ -181,11 +181,11 @@ const PORTFOLIO_DATA = {
 
     services: [
       { name: "Home Assistant",       category: "Smart Home",   description: "Home automation (lights, sensors, cameras)" },
-      { name: "Pi-hole",              category: "Network",      description: "DNS sinkhole — network-wide ad blocking" },
-      { name: "Nextcloud",            category: "Productivity", description: "Personal cloud for files, calendar, contacts" },
-      { name: "Jellyfin",             category: "Media",        description: "Media server for movies and music" },
-      { name: "Gitea",                category: "DevOps",       description: "Self-hosted Git for personal projects" },
-      { name: "Grafana + Prometheus", category: "Monitoring",   description: "Dashboards and metrics for the whole stack" },
+      { name: "Pi-hole",              category: "Network",      description: "Network-wide DNS filtering integrated with OPNsense Unbound. Currently under validation before full LAN migration." },
+      { name: "OPNSense",             category: "Network",       description: "Main router, firewall and DNS resolver using Unbound." },
+      { name: "Proxmox",              category: "Virtualization",        description: "Hypervisor hosting the home lab virtual machines and services." },
+      { name: "Unbound DNS",          category: "Network",      description: "DNS resolver running on OPNsense and used as upstream resolver for Pi-hole." },
+      { name: "Dnsmasq DNS & DHCP", category: "Network",   description: "DHCP service currently distributing DNS settings to local clients." },
       { name: "Vaultwarden",          category: "Security",     description: "Self-hosted password manager (Bitwarden-compatible)" },
       { name: "Traefik",              category: "Network",      description: "Reverse proxy with automatic HTTPS (Let's Encrypt)" }
     ]
