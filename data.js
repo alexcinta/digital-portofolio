@@ -175,7 +175,7 @@ const PORTFOLIO_DATA = {
       { name: "Lenovo ThinkCentre M920Q", spec: "Intel i5-8500T, 16GB RAM, 256GB SSD", role: "Proxmox hypervisor" },
       { name: "Lenovo ThinkCentre M710Q",  spec: "Intel i5-7500T, 8GB RAM", role: "OPNsense Firewall & Router" },
       { name: "TL-SG108E | 8-Port Gigabit Easy Smart Switch - TP-Link", role: "Switch" },
-      { name: "TP-Link Omada EAP225 puncte de acces WLAN 1350 Mbit/s Alb Power over Ethernet (PoE) Suport", role: "WiFI" }
+      { name: "TP-Link Omada EAP225", role: "WiFI" }
       // { name: "UniFi Switch 24-port", spec: "Managed L2+, PoE",                        role: "Distribution" }
     ],
 
